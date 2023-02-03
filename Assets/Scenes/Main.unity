@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt
@@ -192,6 +196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (8)
@@ -254,6 +262,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (7)
@@ -421,6 +433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (1)
@@ -551,6 +567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (4)
@@ -832,6 +852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (3)
@@ -894,6 +918,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (9)
@@ -1057,6 +1085,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (5)
@@ -1119,6 +1151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (6)
@@ -1222,6 +1258,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864514097}
     m_Modifications:
+    - target: {fileID: 4576420147406549884, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8401069363645197096, guid: 3eaf1bd1efa42e74b9ac6af5272e3ebc, type: 3}
       propertyPath: m_Name
       value: block_dirt (2)

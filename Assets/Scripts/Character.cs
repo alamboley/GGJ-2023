@@ -6,8 +6,8 @@ public class Character : MonoBehaviour
 
     [SerializeField] float damage = 0.1f;
 
-    float timeSinceLastMovement = 0f;
-    float speedMove = 0.25f;
+    float _timeSinceLastMovement = 0f;
+    float _speedMove = 0.25f;
 
     void Start()
     {
@@ -16,8 +16,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        
-        timeSinceLastMovement += Time.deltaTime;
+        _timeSinceLastMovement += Time.deltaTime;
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -45,22 +44,26 @@ public class Character : MonoBehaviour
         if (x > 0)
         {
             direction = Vector2.right;
+            raycastCenter.x += 0.4f / 2;
             raycastCenter.y -= 0.4f / 2;
         }
         if (x < 0)
         {
             direction = Vector2.left;
+            raycastCenter.x += 0.4f / 2;
             raycastCenter.y -= 0.4f / 2;
         }
         if (y > 0)
         {
             direction = Vector2.up;
             raycastCenter.x += 0.4f / 2;
+            raycastCenter.y -= 0.4f / 2;
         }
         if (y < 0)
         {
             direction = Vector2.down;
             raycastCenter.x += 0.4f / 2;
+            raycastCenter.y -= 0.4f / 2;
         }
 
         Debug.DrawRay(raycastCenter, direction, Color.cyan);
@@ -69,15 +72,16 @@ public class Character : MonoBehaviour
 
         if (hit.collider != null)
         {
+            Debug.Log(hit.distance);
             Debug.Log(hit.collider.gameObject.name);
             DamageBlock(hit.collider);
         }
         else
         {
-            if (timeSinceLastMovement >= speedMove)
+            if (_timeSinceLastMovement >= _speedMove)
             {
                 this.transform.Translate(x, y, 0);
-                timeSinceLastMovement = 0f;
+                _timeSinceLastMovement = 0f;
             }
 
         }
