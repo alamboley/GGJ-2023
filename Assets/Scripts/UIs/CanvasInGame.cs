@@ -5,10 +5,6 @@ using DG.Tweening;
 public class CanvasInGame : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI GameOver;
-    void Start()
-    {
-        
-    }
 
     public void ShowGameOver()
     {

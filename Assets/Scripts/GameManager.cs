@@ -4,15 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : PersistentSingleton<GameManager>
 {
+    public AudioManager audioManager;
+
     public int totalCoin = 0;
 
     public List<ItemType> abilities = new List<ItemType>();
 
     CanvasInGame canvasInGame;
-
-    [SerializeField] AudioSource audioSource;
-
-    [SerializeField] AudioClip music;
 
     public void AddMoneyBlockDestroyed(int coin)
     {
@@ -30,7 +28,8 @@ public class GameManager : PersistentSingleton<GameManager>
     }
     public void LaunchGame()
     {
-        audioSource.PlayOneShot(music);
+        audioManager.PlayClickSound();
+        audioManager.LaunchMusic();
         GameManager.Instance.MoveToNextLevel();
     }
 
