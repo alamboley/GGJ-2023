@@ -9,6 +9,8 @@ public class Character : MonoBehaviour
     float _timeSinceLastMovement = 0f;
     float _speedMove = 0.25f;
 
+    Blocks _hitBlock;
+
     void Start()
     {
         
@@ -72,9 +74,16 @@ public class Character : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log(hit.distance);
-            Debug.Log(hit.collider.gameObject.name);
-            DamageBlock(hit.collider);
+            //Debug.Log(hit.distance);
+            //Debug.Log(hit.collider.gameObject.name);
+
+            if (_hitBlock == null || hit.collider.gameObject != _hitBlock.gameObject)
+                _hitBlock = hit.collider.GetComponent<Blocks>();
+                
+
+            _hitBlock.AddDamage(damage);
+
+            _timeSinceLastMovement = 0f; // reset to add a delay so the gravity block is well raycasted
         }
         else
         {
@@ -85,10 +94,5 @@ public class Character : MonoBehaviour
             }
 
         }
-    }
-
-    void DamageBlock(Collider2D collider)
-    {
-        collider.GetComponent<Blocks>().AddDamage(damage);
     }
 }
