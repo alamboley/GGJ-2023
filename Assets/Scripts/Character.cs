@@ -13,6 +13,8 @@ public class Character : MonoBehaviour
 
     Blocks _hitBlock;
 
+    public bool canMove = true;
+
     void Start()
     {
         damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Wolverine).Count / 100;
@@ -20,6 +22,9 @@ public class Character : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+            return;
+
         _timeSinceLastMovement += Time.deltaTime;
 
         if (Input.GetKey(KeyCode.RightArrow))

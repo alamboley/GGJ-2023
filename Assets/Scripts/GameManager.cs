@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : PersistentSingleton<GameManager>
@@ -6,6 +7,8 @@ public class GameManager : PersistentSingleton<GameManager>
     public int totalCoin = 0;
 
     public List<ItemType> abilities = new List<ItemType>();
+
+    CanvasInGame canvasInGame;
 
     public void AddMoneyBlockDestroyed(int coin)
     {
@@ -25,5 +28,20 @@ public class GameManager : PersistentSingleton<GameManager>
     public void MoveToNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        canvasInGame = FindObjectOfType<CanvasInGame>();
+    }
+    public void BackToHomeScreen()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void GameOver()
+    {
+        if (canvasInGame == null)
+            canvasInGame = FindObjectOfType<CanvasInGame>();
+
+        Debug.Log(canvasInGame);
+        canvasInGame.ShowGameOver();
     }
 }
