@@ -53,13 +53,17 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f83cc351afd26da4cac790fc3c0ff17b, type: 3}
   - {fileID: 21300000, guid: c75cd5715522d05498223f8e076ae381, type: 3}
   - {fileID: 21300000, guid: 63ed1ad1bc3909b489a0508fbe892825, type: 3}
+  - {fileID: 21300000, guid: 67e1d5420bef73a42a16755bf7433aef, type: 3}
   - {fileID: 21300000, guid: 1a720a926d3e55e44bb961ca596bbf47, type: 3}
   - {fileID: 21300000, guid: c8c1dd03822651f4f9ee2d5c26765715, type: 3}
   - {fileID: 21300000, guid: d2b0d523d8a9657459e9749346dac01e, type: 3}
+  - {fileID: 21300000, guid: ee3958d43954ae445a906d44bdf30917, type: 3}
+  - {fileID: 21300000, guid: 1a1f33a5a3714fd46b8643b9498ac73b, type: 3}
   - {fileID: 21300000, guid: cef07e36b9900a84e9ab95a7c3ff17ab, type: 3}
   - {fileID: 21300000, guid: 9dc32c77a0e0da34c935b533b521a8d5, type: 3}
   - {fileID: 21300000, guid: 120486b7b07410d4e87538e16ede8d1e, type: 3}
   - {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
+  - {fileID: 21300000, guid: e5feeed7442340a4891bd772a6a1aeb1, type: 3}
   - {fileID: 21300000, guid: 782779f778a23a04cb7742567f1b78ab, type: 3}
   - {fileID: 21300000, guid: 1b22d909614a83c4e8b57954fe2681aa, type: 3}
   - {fileID: 21300000, guid: 610ca84afedbc184ebd3e0a603edbcf0, type: 3}
@@ -69,7 +73,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 24a0ac4ba6f5c9949b49b8f612b74fdb, type: 3}
   - {fileID: 21300000, guid: 4bb5dbbb1b89e71429fa195439aabf6b, type: 3}
   - {fileID: 21300000, guid: 8149753d433e5234687524d3b734f609, type: 3}
+  - {fileID: 21300000, guid: 24a18e4dd6c8cde40a0886cfef92feb7, type: 3}
   - {fileID: 21300000, guid: 2883466df2ee4d14f86eb284207d27f4, type: 3}
+  - {fileID: 21300000, guid: 097bb38d5e0fd9843a5132bac119aa67, type: 3}
   - {fileID: 21300000, guid: 11e7c68dded8133408b1af6426295286, type: 3}
   - {fileID: 21300000, guid: 9b44162e5d92d654baf19f3a2fc7b999, type: 3}
   - {fileID: 21300000, guid: 1cc7ddfe523a3f342bea7376b57c1c7f, type: 3}
@@ -78,13 +84,17 @@ SpriteAtlas:
   - block_ressource_red
   - dig_3
   - dig_2
+  - dig_down_4
   - idle_2
   - block_dirt
   - block_background
+  - dig_down_2
+  - dig_up_2
   - root_base_corner_left
   - root_tip_corner_left
   - case
   - block_stone_broke
+  - dig_up_4
   - FogOfWar
   - root_base_straight
   - dig_4
@@ -94,7 +104,9 @@ SpriteAtlas:
   - block_gravel
   - idle_1
   - root_tip_corner_right
+  - dig_up_3
   - FogOfWarSquare
+  - dig_down_3
   - block_ressource_yellow
   - block_dirt_grass
   - block_obsidian

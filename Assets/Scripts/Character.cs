@@ -61,26 +61,38 @@ public class Character : MonoBehaviour
             raycastCenter.y -= 0.4f / 2;
 
             sprite.flipX = false;
+
+            animator.SetBool("isDiggingUp", false);
+            animator.SetBool("isDiggingDown", false);
         }
-        if (x < 0)
+        else if (x < 0)
         {
             direction = Vector2.left;
             raycastCenter.x += 0.4f / 2 - 0.4f;
             raycastCenter.y -= 0.4f / 2;
 
             sprite.flipX = true;
+            animator.SetBool("isDiggingUp", false);
+            animator.SetBool("isDiggingDown", false);
         }
-        if (y > 0)
+        else if (y > 0)
         {
             direction = Vector2.up;
             raycastCenter.x += 0.4f / 2;
             raycastCenter.y -= 0.4f / 2 - 0.4f;
+
+            animator.SetBool("isDiggingUp", true);
+            animator.SetBool("isDiggingDown", false);
         }
-        if (y < 0)
+        else if (y < 0)
         {
             direction = Vector2.down;
             raycastCenter.x += 0.4f / 2;
             raycastCenter.y -= 0.4f / 2 + 0.4f;
+
+
+            animator.SetBool("isDiggingUp", false);
+            animator.SetBool("isDiggingDown", true);
         }
 
         Debug.DrawRay(raycastCenter, direction, Color.cyan);

@@ -38,6 +38,9 @@ public class Gravity : MonoBehaviour
                 if (character != null)
                 {
                     Debug.Log("GAME OVER crushed 1");
+
+                    GameManager.Instance.GameOver();
+                    FindObjectOfType<Character>().canMove = false;
                 }
             }
 
