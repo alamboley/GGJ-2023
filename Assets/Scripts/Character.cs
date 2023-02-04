@@ -70,7 +70,7 @@ public class Character : MonoBehaviour
 
         Debug.DrawRay(raycastCenter, direction, Color.cyan);
 
-        RaycastHit2D hit = Physics2D.Raycast(raycastCenter, direction, 0.4f / 2);
+        RaycastHit2D hit = Physics2D.Raycast(raycastCenter, direction, 0.4f / 4);
 
         if (hit.collider != null)
         {
