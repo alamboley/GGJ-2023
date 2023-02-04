@@ -8,12 +8,6 @@ public class Blocks : MonoBehaviour
         get { return coin; }
     }
 
-    [SerializeField] int gem = 1;
-    public int Gem
-    {
-        get { return gem; }
-    }
-
     [SerializeField] float health = 100f;
 
     private void Update()
@@ -47,7 +41,7 @@ public class Blocks : MonoBehaviour
                 }
             }
 
-            GameManager.Instance.AddMoneyBlockDestroyed(coin, gem);
+            GameManager.Instance.AddMoneyBlockDestroyed(coin);
 
             Destroy(gameObject);
         }
