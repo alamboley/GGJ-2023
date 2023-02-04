@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class CanvasLaunchScreen : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI play;
+    [SerializeField] Button play;
+    [SerializeField] TextMeshProUGUI playText;
     [SerializeField] TextMeshProUGUI money;
     void Start()
     {
-        play.DOFade(0.4f, 0.4f).SetLoops(-1, LoopType.Yoyo);
+        playText.DOFade(0.4f, 0.4f).SetLoops(-1, LoopType.Yoyo);
 
         money.text = GameManager.Instance.totalCoin.ToString();
+
+        play.onClick.AddListener(GameManager.Instance.LaunchGame);
     }
 
     public void UpdateCoins()

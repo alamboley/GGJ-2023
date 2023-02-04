@@ -206,19 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 68126299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 978260822}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LaunchGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &68126299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1513,7 +1501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e8ac63d4479244b920667d51788b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  play: {fileID: 1509743819}
+  play: {fileID: 68126298}
+  playText: {fileID: 1509743819}
   money: {fileID: 630188279}
 --- !u!1001 &5564903690830418683
 PrefabInstance:

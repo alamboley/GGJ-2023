@@ -8,6 +8,8 @@ public class Character : MonoBehaviour
 
     [SerializeField] float damage = 0.1f;
 
+    [SerializeField] Dynamite dynamitePrefab;
+
     float _timeSinceLastMovement = 0f;
     float _speedMove = 0.25f;
 
@@ -46,6 +48,13 @@ public class Character : MonoBehaviour
         else
         {
             animator.SetBool("isDigging", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.A) && GameManager.Instance.abilities.Contains(ItemType.Dynamite))
+        {
+            GameManager.Instance.RemoveItemInInventory(ItemType.Dynamite);
+
+            Instantiate(dynamitePrefab, transform.position, transform.rotation);
         }
     }
 
@@ -109,7 +118,14 @@ public class Character : MonoBehaviour
 
             animator.SetBool("isDigging", true);
 
-            _hitBlock.AddDamage(damage);
+            if (_hitBlock == null)
+            {
+                Debug.LogWarning("here with object : " + hit.collider.name);
+            }
+            else
+            {
+                _hitBlock.AddDamage(damage);
+            }
 
             _timeSinceLastMovement = 0f; // reset to add a delay so the gravity block is well raycasted
         }
