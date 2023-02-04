@@ -46,31 +46,31 @@ public class Character : MonoBehaviour
         if (x > 0)
         {
             direction = Vector2.right;
-            raycastCenter.x += 0.4f / 2;
+            raycastCenter.x += 0.4f / 2 + 0.4f;
             raycastCenter.y -= 0.4f / 2;
         }
         if (x < 0)
         {
             direction = Vector2.left;
-            raycastCenter.x += 0.4f / 2;
+            raycastCenter.x += 0.4f / 2 - 0.4f;
             raycastCenter.y -= 0.4f / 2;
         }
         if (y > 0)
         {
             direction = Vector2.up;
             raycastCenter.x += 0.4f / 2;
-            raycastCenter.y -= 0.4f / 2;
+            raycastCenter.y -= 0.4f / 2 - 0.4f;
         }
         if (y < 0)
         {
             direction = Vector2.down;
             raycastCenter.x += 0.4f / 2;
-            raycastCenter.y -= 0.4f / 2;
+            raycastCenter.y -= 0.4f / 2 + 0.4f;
         }
 
         Debug.DrawRay(raycastCenter, direction, Color.cyan);
 
-        RaycastHit2D hit = Physics2D.Raycast(raycastCenter, direction, 0.4f);
+        RaycastHit2D hit = Physics2D.Raycast(raycastCenter, direction, 0.4f / 2);
 
         if (hit.collider != null)
         {
@@ -79,7 +79,6 @@ public class Character : MonoBehaviour
 
             if (_hitBlock == null || hit.collider.gameObject != _hitBlock.gameObject)
                 _hitBlock = hit.collider.GetComponent<Blocks>();
-                
 
             _hitBlock.AddDamage(damage);
 
