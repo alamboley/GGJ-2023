@@ -70,6 +70,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 24a0ac4ba6f5c9949b49b8f612b74fdb, type: 3}
   - {fileID: 21300000, guid: 4bb5dbbb1b89e71429fa195439aabf6b, type: 3}
   - {fileID: 21300000, guid: 8149753d433e5234687524d3b734f609, type: 3}
+  - {fileID: 21300000, guid: 2883466df2ee4d14f86eb284207d27f4, type: 3}
   - {fileID: 21300000, guid: 11e7c68dded8133408b1af6426295286, type: 3}
   - {fileID: 21300000, guid: 9b44162e5d92d654baf19f3a2fc7b999, type: 3}
   - {fileID: 21300000, guid: 1cc7ddfe523a3f342bea7376b57c1c7f, type: 3}
@@ -95,6 +96,7 @@ SpriteAtlas:
   - block_gravel
   - idle_1
   - root_tip_corner_right
+  - FogOfWarSquare
   - block_ressource_yellow
   - block_dirt_grass
   - block_obsidian
