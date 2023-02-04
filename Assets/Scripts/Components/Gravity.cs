@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class Gravity : MonoBehaviour
 {
-    [SerializeField] float gravitySpeed = 0.4f;
+    [SerializeField] float timingBeforeFirstFall = 1.2f;
+    [SerializeField] float gravitySpeed = 0.6f;
     void Start()
     {
         
@@ -16,9 +17,15 @@ public class Gravity : MonoBehaviour
 
     public void BottomBlockDestroying()
     {
-        transform.Translate(0, -0.4f, 0);
+        StartCoroutine(_BottomBlockDestroying());
+        IEnumerator _BottomBlockDestroying()
+        {
+            yield return new WaitForSeconds(timingBeforeFirstFall);
 
-        StartCoroutine(CheckBottomAndFall());
+            transform.Translate(0, -0.4f, 0);
+
+            StartCoroutine(CheckBottomAndFall());
+        }
     }
 
     public IEnumerator CheckBottomAndFall()
@@ -33,9 +40,9 @@ public class Gravity : MonoBehaviour
         
         if (hit.collider == null)
         {
-            transform.Translate(0, -0.4f, 0);
-
             yield return new WaitForSeconds(gravitySpeed);
+
+            transform.Translate(0, -0.4f, 0);
 
             StartCoroutine(CheckBottomAndFall());
         }
