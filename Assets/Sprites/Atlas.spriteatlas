@@ -50,6 +50,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: f83cc351afd26da4cac790fc3c0ff17b, type: 3}
   - {fileID: 21300000, guid: c8c1dd03822651f4f9ee2d5c26765715, type: 3}
   - {fileID: 21300000, guid: d2b0d523d8a9657459e9749346dac01e, type: 3}
   - {fileID: 21300000, guid: 748d6306a1b93924ca58dcfbee1c739f, type: 3}
@@ -63,9 +64,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 692f51dad2ed7f547b76b35c44e5d922, type: 3}
   - {fileID: 21300000, guid: 24a0ac4ba6f5c9949b49b8f612b74fdb, type: 3}
   - {fileID: 21300000, guid: 8149753d433e5234687524d3b734f609, type: 3}
+  - {fileID: 21300000, guid: 11e7c68dded8133408b1af6426295286, type: 3}
   - {fileID: 21300000, guid: 9b44162e5d92d654baf19f3a2fc7b999, type: 3}
   - {fileID: 21300000, guid: 1cc7ddfe523a3f342bea7376b57c1c7f, type: 3}
+  - {fileID: 21300000, guid: 9b6f01bf4c0b0504eb39ef63d8464587, type: 3}
   m_PackedSpriteNamesToIndex:
+  - block_ressource_red
   - block_dirt
   - block_background
   - border
@@ -79,8 +83,10 @@ SpriteAtlas:
   - root_tip_straight
   - block_gravel
   - root_tip_corner_right
+  - block_ressource_yellow
   - block_dirt_grass
   - block_obsidian
+  - block_ressource_blue
   m_RenderDataMap: {}
   m_Tag: Atlas
   m_IsVariant: 0
