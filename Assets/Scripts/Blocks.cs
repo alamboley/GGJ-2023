@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class Blocks : MonoBehaviour
 {
+    [SerializeField] int gold = 50;
+    public int Gold
+    {
+        get { return gold; }
+    }
+
     [SerializeField] float health = 100f;
 
     private void Update()

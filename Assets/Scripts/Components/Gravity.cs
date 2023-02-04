@@ -24,6 +24,23 @@ public class Gravity : MonoBehaviour
 
             ChainGravityWithUp();
 
+            Vector3 raycastCenter = transform.position;
+            raycastCenter.x += 0.4f / 2;
+            raycastCenter.y -= 0.4f + 0.4f / 2;
+
+            Debug.DrawRay(raycastCenter, Vector2.down, Color.cyan);
+
+            RaycastHit2D hit = Physics2D.Raycast(raycastCenter, Vector2.down, 0.4f / 2);
+
+            if (hit.collider != null)
+            {
+                Character character = hit.collider.GetComponent<Character>();
+                if (character != null)
+                {
+                    Debug.Log("GAME OVER crushed 1");
+                }
+            }
+
             transform.Translate(0, -0.4f, 0);
 
             StartCoroutine(CheckBottomAndFall());
@@ -47,6 +64,20 @@ public class Gravity : MonoBehaviour
             transform.Translate(0, -0.4f, 0);
 
             StartCoroutine(CheckBottomAndFall());
+        }
+        else
+        {
+            Character character = hit.collider.GetComponent<Character>();
+            if (character != null)
+            {
+                yield return new WaitForSeconds(gravitySpeed);
+
+                Debug.Log("GAME OVER crushed");
+
+                transform.Translate(0, -0.4f, 0);
+
+                StartCoroutine(CheckBottomAndFall());
+            }
         }
     }
 
