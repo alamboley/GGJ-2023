@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Blocks : MonoBehaviour
 {
-
     [SerializeField] float health = 100f;
 
     private void Update()
@@ -22,7 +21,6 @@ public class Blocks : MonoBehaviour
 
             Debug.DrawRay(raycastCenter, Vector2.up, Color.cyan);
 
-            BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
             RaycastHit2D hit = Physics2D.Raycast(raycastCenter, Vector2.up, 0.4f / 2);
 
             if (hit.collider != null)
