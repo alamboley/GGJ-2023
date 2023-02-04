@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    [SerializeField] SpriteRenderer sprite;
+    [SerializeField] Animator animator;
 
     [SerializeField] float damage = 0.1f;
 
@@ -36,6 +38,10 @@ public class Character : MonoBehaviour
         {
             MoveToDirection(0, -0.4f);
         }
+        else
+        {
+            animator.SetBool("isDigging", false);
+        }
     }
 
     void MoveToDirection(float x, float y)
@@ -48,12 +54,16 @@ public class Character : MonoBehaviour
             direction = Vector2.right;
             raycastCenter.x += 0.4f / 2 + 0.4f;
             raycastCenter.y -= 0.4f / 2;
+
+            sprite.flipX = false;
         }
         if (x < 0)
         {
             direction = Vector2.left;
             raycastCenter.x += 0.4f / 2 - 0.4f;
             raycastCenter.y -= 0.4f / 2;
+
+            sprite.flipX = true;
         }
         if (y > 0)
         {
@@ -79,6 +89,8 @@ public class Character : MonoBehaviour
 
             if (_hitBlock == null || hit.collider.gameObject != _hitBlock.gameObject)
                 _hitBlock = hit.collider.GetComponent<Blocks>();
+
+            animator.SetBool("isDigging", true);
 
             _hitBlock.AddDamage(damage);
 
