@@ -32,7 +32,7 @@ public class RootsAnimation : MonoBehaviour
             {
                 transform.GetChild(position).GetComponent<SpriteRenderer>().DOFade(1, fadeSpeed).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                    DOVirtual.DelayedCall(fadeSpeed, () => AnimateRoots(position + 1));
+                    AnimateRoots(position + 1);
                 });
             });
         }
