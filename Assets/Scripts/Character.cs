@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
 
     void Start()
     {
-        
+        damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Wolverine).Count / 100;
     }
 
     void Update()

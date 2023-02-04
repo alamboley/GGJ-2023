@@ -1,28 +1,14 @@
-using UnityEngine;
+using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour
+
+public class GameManager : PersistentSingleton<GameManager>
 {
-    private static GameManager instance = null;
-    public static GameManager Instance => instance;
+    public int totalCoin = 0;
 
-    int totalCoin = 0;
-
-    private void Awake()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        else
-        {
-            instance = this;
-        }
-        DontDestroyOnLoad(this.gameObject);
-    }
+    public List<ItemType> abilities = new List<ItemType>();
 
     public void AddMoneyBlockDestroyed(int coin)
     {
-        totalCoin += coin;
+        totalCoin += coin + coin * abilities.FindAll(x => x == ItemType.Cresus).Count / 100;
     }
 }

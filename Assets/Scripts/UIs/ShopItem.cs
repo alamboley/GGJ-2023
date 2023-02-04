@@ -13,12 +13,20 @@ public class ShopItem : MonoBehaviour
 
     void Clicked()
     {
+        if (cost <= GameManager.Instance.totalCoin)
+        {
+            GameManager.Instance.totalCoin -= cost;
 
+            GameManager.Instance.abilities.Add(itemType);
+        }
     }
 }
 
 public enum ItemType
 {
     Dynamite,
-    Claws
+    Claws,
+    Cresus,
+    Wolverine,
+    Fog
 }
