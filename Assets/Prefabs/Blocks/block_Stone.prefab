@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 484542853203231444}
   - component: {fileID: 4576420147406549884}
   m_Layer: 0
-  m_Name: block_dirt
+  m_Name: block_Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8c1dd03822651f4f9ee2d5c26765715, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.38848346, g: 0.8490566, b: 0.6535944, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,4 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a17536b29dd84c41a1a7aa4444578ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 2000
