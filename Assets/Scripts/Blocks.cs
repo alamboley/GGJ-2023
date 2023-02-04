@@ -41,6 +41,8 @@ public class Blocks : MonoBehaviour
                 }
             }
 
+            GameManager.Instance.AddCoinBlockDestroyed(gold);
+
             Destroy(gameObject);
         }
     }
