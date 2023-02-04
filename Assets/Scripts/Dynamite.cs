@@ -90,6 +90,9 @@ public class Dynamite : MonoBehaviour
             {
                 Debug.Log("DYNAMITE KILLS PLAYERS");
                 Destroy(hit.collider.gameObject);
+
+                GameManager.Instance.GameOver();
+                FindObjectOfType<Character>().canMove = false;
             }
         }
     }

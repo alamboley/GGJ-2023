@@ -74,6 +74,9 @@ public class Gravity : MonoBehaviour
 
                 Debug.Log("GAME OVER crushed");
 
+                GameManager.Instance.GameOver();
+                FindObjectOfType<Character>().canMove = false;
+
                 transform.Translate(0, -0.4f, 0);
 
                 StartCoroutine(CheckBottomAndFall());

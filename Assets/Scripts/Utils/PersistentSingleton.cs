@@ -34,14 +34,11 @@ public class PersistentSingleton<T> : MonoBehaviour where T : Component
 
         if (_instance == null)
         {
-            //If I am the first instance, make me the Singleton
             _instance = this as T;
             DontDestroyOnLoad(transform.gameObject);
         }
         else if (this != _instance)
         {
-            //If a Singleton already exists and you find
-            //another reference in scene, kill itself !
             Destroy(this.gameObject);
 
         }
