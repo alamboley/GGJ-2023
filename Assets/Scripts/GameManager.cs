@@ -10,6 +10,10 @@ public class GameManager : PersistentSingleton<GameManager>
 
     CanvasInGame canvasInGame;
 
+    [SerializeField] AudioSource audioSource;
+
+    [SerializeField] AudioClip music;
+
     public void AddMoneyBlockDestroyed(int coin)
     {
         totalCoin += coin + coin * abilities.FindAll(x => x == ItemType.Cresus).Count / 100;
@@ -23,6 +27,11 @@ public class GameManager : PersistentSingleton<GameManager>
     public void RemoveItemInInventory(ItemType ability)
     {
         abilities.Remove(ability);
+    }
+    public void LaunchGame()
+    {
+        audioSource.PlayOneShot(music);
+        GameManager.Instance.MoveToNextLevel();
     }
 
     public void MoveToNextLevel()
