@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : PersistentSingleton<GameManager>
 {
@@ -20,5 +20,10 @@ public class GameManager : PersistentSingleton<GameManager>
     public void RemoveItemInInventory(ItemType ability)
     {
         abilities.Remove(ability);
+    }
+
+    public void MoveToNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

@@ -25,6 +25,7 @@ public class RootsAnimation : MonoBehaviour
         if (position == transform.childCount)
         {
             Debug.Log("roots completed");
+            GameManager.Instance.MoveToNextLevel();
         }
         else
         {
