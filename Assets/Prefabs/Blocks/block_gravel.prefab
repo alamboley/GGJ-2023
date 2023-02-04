@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c8c1dd03822651f4f9ee2d5c26765715, type: 3}
-  m_Color: {r: 1, g: 0.9903463, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 24a0ac4ba6f5c9949b49b8f612b74fdb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a17536b29dd84c41a1a7aa4444578ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  coin: 0
+  health: 200
 --- !u!114 &4769708330410274255
 MonoBehaviour:
   m_ObjectHideFlags: 0
