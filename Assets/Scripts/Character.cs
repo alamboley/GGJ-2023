@@ -1,4 +1,5 @@
 
+using DG.Tweening;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -17,9 +18,11 @@ public class Character : MonoBehaviour
 
     public bool canMove = true;
 
+    bool _WolverineModeOn = false;
+
     void Start()
     {
-        damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Wolverine).Count / 100;
+        damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Claws).Count / 100;
     }
 
     void Update()
@@ -55,6 +58,20 @@ public class Character : MonoBehaviour
             GameManager.Instance.RemoveItemInInventory(ItemType.Dynamite);
 
             Instantiate(dynamitePrefab, transform.position, transform.rotation);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && GameManager.Instance.abilities.Contains(ItemType.Wolverine) && !_WolverineModeOn)
+        {
+            GameManager.Instance.RemoveItemInInventory(ItemType.Wolverine);
+
+            _WolverineModeOn = true;
+
+            sprite.DOColor(Color.red, 0.2f).SetLoops(40, LoopType.Yoyo).SetEase(Ease.Linear).OnComplete(() =>
+            {
+                sprite.color = Color.white;
+
+                _WolverineModeOn = false;
+            });
         }
     }
 
@@ -124,7 +141,7 @@ public class Character : MonoBehaviour
             }
             else
             {
-                _hitBlock.AddDamage(damage);
+                _hitBlock.AddDamage(damage * (_WolverineModeOn ? 4 : 1));
             }
 
             _timeSinceLastMovement = 0f; // reset to add a delay so the gravity block is well raycasted

@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962326170293952226, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_Name
-      value: Wolverine
+      value: Claws
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: itemType
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: canvasLaunchScreen
@@ -806,7 +806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962326170293952226, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_Name
-      value: Claws
+      value: Wolverine
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
@@ -814,7 +814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: itemType
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: canvasLaunchScreen
