@@ -7,12 +7,12 @@ public class Gravity : MonoBehaviour
     [SerializeField] float gravitySpeed = 0.6f;
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
 
     public void BottomBlockDestroying()
@@ -21,6 +21,8 @@ public class Gravity : MonoBehaviour
         IEnumerator _BottomBlockDestroying()
         {
             yield return new WaitForSeconds(timingBeforeFirstFall);
+
+            ChainGravityWithUp();
 
             transform.Translate(0, -0.4f, 0);
 
@@ -37,7 +39,7 @@ public class Gravity : MonoBehaviour
         Debug.DrawRay(raycastCenter, Vector2.down, Color.cyan);
 
         RaycastHit2D hit = Physics2D.Raycast(raycastCenter, Vector2.down, 0.4f / 2);
-        
+
         if (hit.collider == null)
         {
             yield return new WaitForSeconds(gravitySpeed);
@@ -45,6 +47,29 @@ public class Gravity : MonoBehaviour
             transform.Translate(0, -0.4f, 0);
 
             StartCoroutine(CheckBottomAndFall());
+        }
+    }
+
+    public void ChainGravityWithUp()
+    {
+        Vector3 raycastCenter = transform.position;
+        raycastCenter.x += 0.4f / 2;
+        raycastCenter.y += 0.4f;
+
+        Debug.DrawRay(raycastCenter, Vector2.up, Color.cyan);
+
+        RaycastHit2D hit = Physics2D.Raycast(raycastCenter, Vector2.up, 0.4f / 2);
+
+        if (hit.collider != null)
+        {
+            //Debug.Log("me :" + gameObject.name);
+            //Debug.Log("hit : " + hit.collider.gameObject.name);
+            Gravity gravityBlock = hit.collider.GetComponent<Gravity>();
+
+            if (gravityBlock != null)
+            {
+                gravityBlock.BottomBlockDestroying();
+            }
         }
     }
 }
