@@ -10,6 +10,8 @@ public class Blocks : MonoBehaviour
 
     [SerializeField] float health = 100f;
 
+    [SerializeField] bool hasDynamite = false;
+
     public void AddDamage(float damage)
     {
         health -= damage;
@@ -41,6 +43,9 @@ public class Blocks : MonoBehaviour
         }
 
         GameManager.Instance.AddMoneyBlockDestroyed(coin);
+
+        if (hasDynamite)
+            GameManager.Instance.AddItemInInventory(ItemType.Dynamite);
 
         Destroy(gameObject);
     }

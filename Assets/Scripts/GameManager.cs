@@ -11,4 +11,14 @@ public class GameManager : PersistentSingleton<GameManager>
     {
         totalCoin += coin + coin * abilities.FindAll(x => x == ItemType.Cresus).Count / 100;
     }
+
+    public void AddItemInInventory(ItemType ability)
+    {
+        abilities.Add(ability);
+    }
+
+    public void RemoveItemInInventory(ItemType ability)
+    {
+        abilities.Remove(ability);
+    }
 }
