@@ -60,6 +60,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9a2059aab2bf8ce49aadc3ce47022e75, type: 3}
   - {fileID: 21300000, guid: 4734abaa56c78d843b6f8f92ce349a01, type: 3}
   - {fileID: 21300000, guid: 692f51dad2ed7f547b76b35c44e5d922, type: 3}
+  - {fileID: 21300000, guid: 24a0ac4ba6f5c9949b49b8f612b74fdb, type: 3}
   - {fileID: 21300000, guid: 8149753d433e5234687524d3b734f609, type: 3}
   - {fileID: 21300000, guid: 9b44162e5d92d654baf19f3a2fc7b999, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -73,6 +74,7 @@ SpriteAtlas:
   - block_stone
   - root_base_corner_right
   - root_tip_straight
+  - block_gravel
   - root_tip_corner_right
   - block_dirt_grass
   m_RenderDataMap: {}
