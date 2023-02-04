@@ -5,7 +5,8 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
     public static GameManager Instance => instance;
 
-    int totalGold = 0;
+    int totalCoin = 0;
+    int totalGem = 0;
 
     private void Awake()
     {
@@ -21,8 +22,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void AddCoinBlockDestroyed(int gold)
+    public void AddMoneyBlockDestroyed(int coin, int gem)
     {
-        totalGold += gold;
+        totalCoin += coin;
+        totalGem += gem;
     }
 }

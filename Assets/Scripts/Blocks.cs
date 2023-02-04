@@ -2,10 +2,16 @@ using UnityEngine;
 
 public class Blocks : MonoBehaviour
 {
-    [SerializeField] int gold = 50;
-    public int Gold
+    [SerializeField] int coin = 50;
+    public int Coin
     {
-        get { return gold; }
+        get { return coin; }
+    }
+
+    [SerializeField] int gem = 1;
+    public int Gem
+    {
+        get { return gem; }
     }
 
     [SerializeField] float health = 100f;
@@ -41,7 +47,7 @@ public class Blocks : MonoBehaviour
                 }
             }
 
-            GameManager.Instance.AddCoinBlockDestroyed(gold);
+            GameManager.Instance.AddMoneyBlockDestroyed(coin, gem);
 
             Destroy(gameObject);
         }
