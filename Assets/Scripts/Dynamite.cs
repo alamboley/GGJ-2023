@@ -2,7 +2,20 @@ using UnityEngine;
 
 public class Dynamite : MonoBehaviour
 {
-    void Start()
+    [SerializeField] float timeBeforeExplosion = 2f;
+
+    float _timeElapsed = 0;
+
+    private void Update()
+    {
+        _timeElapsed += Time.deltaTime;
+        if (_timeElapsed >= timeBeforeExplosion)
+        {
+            RaycastAround();
+            Destroy(gameObject);
+        }
+    }
+    void RaycastAround()
     {
         Vector2 direction = Vector2.zero;
         Vector3 raycastCenter = transform.position;

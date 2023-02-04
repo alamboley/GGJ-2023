@@ -58,6 +58,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9dc32c77a0e0da34c935b533b521a8d5, type: 3}
   - {fileID: 21300000, guid: 120486b7b07410d4e87538e16ede8d1e, type: 3}
   - {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
+  - {fileID: 21300000, guid: 782779f778a23a04cb7742567f1b78ab, type: 3}
   - {fileID: 21300000, guid: 1b22d909614a83c4e8b57954fe2681aa, type: 3}
   - {fileID: 21300000, guid: 9a2059aab2bf8ce49aadc3ce47022e75, type: 3}
   - {fileID: 21300000, guid: 4734abaa56c78d843b6f8f92ce349a01, type: 3}
@@ -77,6 +78,7 @@ SpriteAtlas:
   - root_tip_corner_left
   - case
   - block_stone_broke
+  - FogOfWar
   - root_base_straight
   - block_stone
   - root_base_corner_right
