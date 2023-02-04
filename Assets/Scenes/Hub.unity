@@ -2644,7 +2644,7 @@ GameObject:
   - component: {fileID: 2127863496}
   - component: {fileID: 2127863497}
   m_Layer: 5
-  m_Name: ShopItemSeve
+  m_Name: ShopItemSave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
