@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: root_base_straight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9165540007399635529, guid: 6529920e3eaf63245a641149cc494a00, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6529920e3eaf63245a641149cc494a00, type: 3}
 --- !u!4 &6486986 stripped
@@ -6957,6 +6961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 594949059}
+  - component: {fileID: 594949060}
   m_Layer: 0
   m_Name: Racine
   m_TagString: Untagged
@@ -7012,6 +7017,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &594949060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594949058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0669cb600118b2946bd2348e2fd85292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: 1
 --- !u!1001 &597386305
 PrefabInstance:
   m_ObjectHideFlags: 0

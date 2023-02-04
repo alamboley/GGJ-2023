@@ -51,25 +51,29 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: c8c1dd03822651f4f9ee2d5c26765715, type: 3}
-  - {fileID: 21300000, guid: e9b27c0483fd4f1479889482499898b6, type: 3}
   - {fileID: 21300000, guid: 748d6306a1b93924ca58dcfbee1c739f, type: 3}
+  - {fileID: 21300000, guid: cef07e36b9900a84e9ab95a7c3ff17ab, type: 3}
+  - {fileID: 21300000, guid: 9dc32c77a0e0da34c935b533b521a8d5, type: 3}
   - {fileID: 21300000, guid: 120486b7b07410d4e87538e16ede8d1e, type: 3}
   - {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
   - {fileID: 21300000, guid: 1b22d909614a83c4e8b57954fe2681aa, type: 3}
   - {fileID: 21300000, guid: 9a2059aab2bf8ce49aadc3ce47022e75, type: 3}
+  - {fileID: 21300000, guid: 4734abaa56c78d843b6f8f92ce349a01, type: 3}
   - {fileID: 21300000, guid: 692f51dad2ed7f547b76b35c44e5d922, type: 3}
-  - {fileID: 21300000, guid: fb5a67ac7b873a94b9756730c6f2fc8d, type: 3}
+  - {fileID: 21300000, guid: 8149753d433e5234687524d3b734f609, type: 3}
   - {fileID: 21300000, guid: 9b44162e5d92d654baf19f3a2fc7b999, type: 3}
   m_PackedSpriteNamesToIndex:
   - block_dirt
-  - root_base_corner
   - border
+  - root_base_corner_left
+  - root_tip_corner_left
   - case
   - block_stone_broke
   - root_base_straight
   - block_stone
+  - root_base_corner_right
   - root_tip_straight
-  - root_tip_corner
+  - root_tip_corner_right
   - block_dirt_grass
   m_RenderDataMap: {}
   m_Tag: Atlas

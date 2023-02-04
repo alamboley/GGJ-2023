@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System.Collections;
 using UnityEngine;
 
 public class RootsAnimation : MonoBehaviour
@@ -12,6 +11,7 @@ public class RootsAnimation : MonoBehaviour
         for (int i = 0; i < transform.childCount; ++i)
         {
             transform.GetChild(i).GetComponent<SpriteRenderer>().color = alpha;
+            transform.GetChild(i).GetChild(0).GetComponent<SpriteRenderer>().color = alpha;
         }
     }
 
@@ -28,9 +28,12 @@ public class RootsAnimation : MonoBehaviour
         }
         else
         {
-            transform.GetChild(position).GetComponent<SpriteRenderer>().DOFade(1, fadeSpeed).SetEase(Ease.Linear).OnComplete(() =>
+            transform.GetChild(position).GetChild(0).GetComponent<SpriteRenderer>().DOFade(1, fadeSpeed).SetEase(Ease.Linear).OnComplete(() =>
             {
-                DOVirtual.DelayedCall(fadeSpeed, () => AnimateRoots(position + 1));
+                transform.GetChild(position).GetComponent<SpriteRenderer>().DOFade(1, fadeSpeed).SetEase(Ease.Linear).OnComplete(() =>
+                {
+                    DOVirtual.DelayedCall(fadeSpeed, () => AnimateRoots(position + 1));
+                });
             });
         }
     }
