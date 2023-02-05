@@ -13379,11 +13379,11 @@ Transform:
   - {fileID: 1805182206}
   - {fileID: 2124356512}
   - {fileID: 1902329314}
-  - {fileID: 1473468144}
-  - {fileID: 555458112}
   - {fileID: 911574663}
   - {fileID: 1911226260}
+  - {fileID: 1473468144}
   - {fileID: 569043602}
+  - {fileID: 555458112}
   m_Father: {fileID: 1864514097}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22096,7 +22096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0669cb600118b2946bd2348e2fd85292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 3
+  fadeSpeed: 2
 --- !u!1001 &1117841385
 PrefabInstance:
   m_ObjectHideFlags: 0

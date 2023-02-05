@@ -15154,7 +15154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0669cb600118b2946bd2348e2fd85292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 1
+  fadeSpeed: 1.5
 --- !u!1001 &753096751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29922,6 +29922,10 @@ PrefabInstance:
     - target: {fileID: 7826278150447960121, guid: 56929c8ca22e3174a9c1df5af1c528d6, type: 3}
       propertyPath: m_Name
       value: CanvasInGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826278150447960121, guid: 56929c8ca22e3174a9c1df5af1c528d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7826278150447960125, guid: 56929c8ca22e3174a9c1df5af1c528d6, type: 3}
       propertyPath: m_Pivot.x
