@@ -69,6 +69,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
   - {fileID: 21300000, guid: e5feeed7442340a4891bd772a6a1aeb1, type: 3}
   - {fileID: 21300000, guid: 3d0b90e785b8fbc48801c0261e6710a0, type: 3}
+  - {fileID: 21300000, guid: 39f085c8eee523748b7a8f4675f7de07, type: 3}
   - {fileID: 21300000, guid: 1b22d909614a83c4e8b57954fe2681aa, type: 3}
   - {fileID: 21300000, guid: 4f97dea91127317478bbb0ed9d590174, type: 3}
   - {fileID: 21300000, guid: 610ca84afedbc184ebd3e0a603edbcf0, type: 3}
@@ -108,6 +109,7 @@ SpriteAtlas:
   - block_stone_broke
   - dig_up_4
   - item_coin
+  - logo
   - root_base_straight
   - button
   - dig_4
