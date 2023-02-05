@@ -60,12 +60,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c8c1dd03822651f4f9ee2d5c26765715, type: 3}
   - {fileID: 21300000, guid: d2b0d523d8a9657459e9749346dac01e, type: 3}
   - {fileID: 21300000, guid: ee3958d43954ae445a906d44bdf30917, type: 3}
+  - {fileID: 21300000, guid: 3814c505f82068d4a83009be06226ee7, type: 3}
   - {fileID: 21300000, guid: 1a1f33a5a3714fd46b8643b9498ac73b, type: 3}
   - {fileID: 21300000, guid: cef07e36b9900a84e9ab95a7c3ff17ab, type: 3}
+  - {fileID: 21300000, guid: 27ebbb67f966a5b478212cb2a135ceef, type: 3}
   - {fileID: 21300000, guid: 9dc32c77a0e0da34c935b533b521a8d5, type: 3}
   - {fileID: 21300000, guid: 120486b7b07410d4e87538e16ede8d1e, type: 3}
   - {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
   - {fileID: 21300000, guid: e5feeed7442340a4891bd772a6a1aeb1, type: 3}
+  - {fileID: 21300000, guid: 3d0b90e785b8fbc48801c0261e6710a0, type: 3}
   - {fileID: 21300000, guid: 1b22d909614a83c4e8b57954fe2681aa, type: 3}
   - {fileID: 21300000, guid: 4f97dea91127317478bbb0ed9d590174, type: 3}
   - {fileID: 21300000, guid: 610ca84afedbc184ebd3e0a603edbcf0, type: 3}
@@ -75,13 +78,16 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 24a0ac4ba6f5c9949b49b8f612b74fdb, type: 3}
   - {fileID: 21300000, guid: 4bb5dbbb1b89e71429fa195439aabf6b, type: 3}
   - {fileID: 21300000, guid: 8149753d433e5234687524d3b734f609, type: 3}
+  - {fileID: 21300000, guid: 30b8c94d80af6cb4384834889881827c, type: 3}
   - {fileID: 21300000, guid: 24a18e4dd6c8cde40a0886cfef92feb7, type: 3}
   - {fileID: 21300000, guid: 2883466df2ee4d14f86eb284207d27f4, type: 3}
   - {fileID: 21300000, guid: 097bb38d5e0fd9843a5132bac119aa67, type: 3}
   - {fileID: 21300000, guid: 11e7c68dded8133408b1af6426295286, type: 3}
   - {fileID: 21300000, guid: 9b44162e5d92d654baf19f3a2fc7b999, type: 3}
+  - {fileID: 21300000, guid: 15628a2e37870514da73915293eb522c, type: 3}
   - {fileID: 21300000, guid: 1cc7ddfe523a3f342bea7376b57c1c7f, type: 3}
   - {fileID: 21300000, guid: 9b6f01bf4c0b0504eb39ef63d8464587, type: 3}
+  - {fileID: 21300000, guid: 31656adfc6986654fb9dcb393b962af4, type: 3}
   m_PackedSpriteNamesToIndex:
   - block_ressource_red
   - dig_3
@@ -93,12 +99,15 @@ SpriteAtlas:
   - block_dirt
   - block_background
   - dig_down_2
+  - item_claws
   - dig_up_2
   - root_base_corner_left
+  - item_wolverine
   - root_tip_corner_left
   - case
   - block_stone_broke
   - dig_up_4
+  - item_coin
   - root_base_straight
   - button
   - dig_4
@@ -108,13 +117,16 @@ SpriteAtlas:
   - block_gravel
   - idle_1
   - root_tip_corner_right
+  - item_dynamite
   - dig_up_3
   - FogOfWarSquare
   - dig_down_3
   - block_ressource_yellow
   - block_dirt_grass
+  - item_supervision
   - block_obsidian
   - block_ressource_blue
+  - item_cresus
   m_RenderDataMap: {}
   m_Tag: Atlas
   m_IsVariant: 0
