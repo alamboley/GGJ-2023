@@ -9,7 +9,7 @@ public class Block : MonoBehaviour
         get { return coin; }
     }
 
-    [SerializeField] float health = 100f;
+    [SerializeField] public float health = 100f;
 
     [SerializeField] bool hasDynamite = false;
 
