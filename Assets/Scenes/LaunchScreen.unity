@@ -1131,11 +1131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioManager: {fileID: 1518986886}
   audioSource: {fileID: 978260824}
-<<<<<<< Updated upstream
   totalCoin: 0
-=======
-  totalCoin: 10000
->>>>>>> Stashed changes
   abilities: 
 --- !u!4 &978260823
 Transform:
