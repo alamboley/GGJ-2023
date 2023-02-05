@@ -889,7 +889,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf7ef40b8bfcd3841ba06e9f6a67179a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1518,6 +1518,7 @@ MonoBehaviour:
   click: {fileID: 8300000, guid: 384e96164f26c9a47a5cf478694f24da, type: 3}
   dynamite: {fileID: 8300000, guid: 6057d627401e96d49977776536de64b2, type: 3}
   explosion: {fileID: 8300000, guid: bcf2e9e1e7c1f954a95e251695a55905, type: 3}
+  crushed: {fileID: 8300000, guid: 8fac80f9b4f8f3248b712adc6bcf6cfe, type: 3}
 --- !u!1 &1522378296
 GameObject:
   m_ObjectHideFlags: 0

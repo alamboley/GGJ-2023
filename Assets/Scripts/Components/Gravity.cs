@@ -39,6 +39,8 @@ public class Gravity : MonoBehaviour
                 {
                     Debug.Log("GAME OVER crushed 1");
 
+                    GameManager.Instance.audioManager.PlayCrushedSound();
+
                     GameManager.Instance.GameOver();
                     FindObjectOfType<Character>().canMove = false;
                 }
@@ -76,6 +78,8 @@ public class Gravity : MonoBehaviour
                 yield return new WaitForSeconds(gravitySpeed);
 
                 Debug.Log("GAME OVER crushed");
+
+                GameManager.Instance.audioManager.PlayCrushedSound();
 
                 GameManager.Instance.GameOver();
                 FindObjectOfType<Character>().canMove = false;

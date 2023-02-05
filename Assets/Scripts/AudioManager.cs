@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip click;
     [SerializeField] AudioClip dynamite;
     [SerializeField] AudioClip explosion;
+    [SerializeField] AudioClip crushed;
 
     public void PlayClickSound()
     {
@@ -19,5 +20,10 @@ public class AudioManager : MonoBehaviour
         audioSource.PlayOneShot(dynamite);
 
         DOVirtual.DelayedCall(delay, () => audioSource.PlayOneShot(explosion));
+    }
+
+    public void PlayCrushedSound()
+    {
+        audioSource.PlayOneShot(crushed);
     }
 }
