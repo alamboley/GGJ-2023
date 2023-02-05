@@ -64,7 +64,7 @@ public class RootsAnimation : MonoBehaviour
                     }
                     else
                     {
-                        Blocks block = hit.collider.GetComponent<Blocks>();
+                        Block block = hit.collider.GetComponent<Block>();
                         if (block != null)
                         {
                             Debug.Log("GAME OVER roots hit block");

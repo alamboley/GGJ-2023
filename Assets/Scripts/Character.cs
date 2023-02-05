@@ -16,7 +16,7 @@ public class Character : MonoBehaviour
     float _timeSinceLastMovement = 0f;
     float _speedMove = 0.25f;
 
-    Blocks _hitBlock;
+    Block _hitBlock;
 
     public bool canMove = true;
 
@@ -138,7 +138,7 @@ public class Character : MonoBehaviour
             //Debug.Log(hit.collider.gameObject.name);
 
             if (_hitBlock == null || hit.collider.gameObject != _hitBlock.gameObject)
-                _hitBlock = hit.collider.GetComponent<Blocks>();
+                _hitBlock = hit.collider.GetComponent<Block>();
 
             animator.SetBool("isDigging", true);
 

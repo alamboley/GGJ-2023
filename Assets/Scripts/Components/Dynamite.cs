@@ -85,7 +85,7 @@ public class Dynamite : MonoBehaviour
     {
         if (hit.collider != null)
         {
-            Blocks block = hit.collider.GetComponent<Blocks>();
+            Block block = hit.collider.GetComponent<Block>();
             if (block != null)
                 block.DestroyBlock();
 

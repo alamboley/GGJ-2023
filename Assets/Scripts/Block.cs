@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Blocks : MonoBehaviour
+public class Block : MonoBehaviour
 {
     [SerializeField] BlockType blockType;
     [SerializeField] int coin = 50;
