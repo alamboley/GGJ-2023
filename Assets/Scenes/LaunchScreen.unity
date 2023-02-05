@@ -1892,6 +1892,9 @@ MonoBehaviour:
   destroyDirt: {fileID: 8300000, guid: 384e96164f26c9a47a5cf478694f24da, type: 3}
   destroyGravel: {fileID: 8300000, guid: 26940f6273adc01449ab37ffc676f56b, type: 3}
   destroyStone: {fileID: 8300000, guid: 142212f1e29eb274da2020c8fd822c22, type: 3}
+  fallenGravel: {fileID: 8300000, guid: dbd48d4c4fe1e504ba3c6703b8644f78, type: 3}
+  fallenObsidienne: {fileID: 8300000, guid: 960c16cc17a4808458caf00fde60ca22, type: 3}
+  fallenStone: {fileID: 8300000, guid: 08a348bad45d7394bb2cd48af6a9036d, type: 3}
 --- !u!1 &1522378296
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,6 +46,7 @@ public class Gravity : MonoBehaviour
             }
 
             transform.Translate(0, -0.4f, 0);
+            PlayCorrespondingFallingSound();
 
             StartCoroutine(CheckBottomAndFall());
         }
@@ -66,6 +67,7 @@ public class Gravity : MonoBehaviour
             yield return new WaitForSeconds(gravitySpeed);
 
             transform.Translate(0, -0.4f, 0);
+            PlayCorrespondingFallingSound();
 
             StartCoroutine(CheckBottomAndFall());
         }
@@ -83,6 +85,7 @@ public class Gravity : MonoBehaviour
                 GameManager.Instance.GameOver(character, true);
 
                 transform.Translate(0, -0.4f, 0);
+                PlayCorrespondingFallingSound();
 
                 StartCoroutine(CheckBottomAndFall());
             }
@@ -110,5 +113,17 @@ public class Gravity : MonoBehaviour
                 gravityBlock.BottomBlockDestroying();
             }
         }
+    }
+
+    void PlayCorrespondingFallingSound()
+    {
+        BlockType blockType = GetComponent<Block>().BlockType;
+
+        if (blockType == BlockType.Gravel)
+            GameManager.Instance.audioManager.PlayFallenGravelSound();
+        else if (blockType == BlockType.Obsidian)
+            GameManager.Instance.audioManager.PlayFallenObsidienneSound();
+        else if (blockType == BlockType.Stone)
+            GameManager.Instance.audioManager.PlayFallenStoneSound();
     }
 }
