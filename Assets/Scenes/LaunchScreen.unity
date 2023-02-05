@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioManager: {fileID: 1518986886}
   audioSource: {fileID: 978260824}
-  totalCoin: 1000
+  totalCoin: 0
   abilities: 
 --- !u!4 &978260823
 Transform:
