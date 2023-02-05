@@ -64,8 +64,22 @@ public class Block : MonoBehaviour
             GameManager.Instance.audioManager.PlayDestroyGravelSound();
         else if (blockType == BlockType.Stone)
             GameManager.Instance.audioManager.PlayDestroyStoneSound();
-
-
+        else if (blockType == BlockType.DirtWithResourceBlue)
+        {
+            GameManager.Instance.audioManager.PlayDestroyDirtSound();
+            GameManager.Instance.audioManager.PlayCoinBlueSound();
+        }
+        else if (blockType == BlockType.DirtWithResourceRed)
+        {
+            GameManager.Instance.audioManager.PlayDestroyDirtSound();
+            GameManager.Instance.audioManager.PlayCoinRedSound();
+        }
+        else if (blockType == BlockType.DirtWithResourceYellow)
+        {
+            GameManager.Instance.audioManager.PlayDestroyDirtSound();
+            GameManager.Instance.audioManager.PlayCoinYellowSound();
+        }
+        
         Destroy(gameObject);
     }
 }

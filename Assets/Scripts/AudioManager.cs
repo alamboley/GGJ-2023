@@ -9,6 +9,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip dynamite;
     [SerializeField] AudioClip explosion;
     [SerializeField] AudioClip crushed;
+    [SerializeField] AudioClip coinBlue;
+    [SerializeField] AudioClip coinRed;
+    [SerializeField] AudioClip coinYellow;
     [SerializeField] AudioClip destroyDirt;
     [SerializeField] AudioClip destroyGravel;
     [SerializeField] AudioClip destroyStone;
@@ -28,6 +31,19 @@ public class AudioManager : MonoBehaviour
     public void PlayCrushedSound()
     {
         audioSource.PlayOneShot(crushed);
+    }
+
+    public void PlayCoinBlueSound()
+    {
+        audioSource.PlayOneShot(coinBlue);
+    }
+    public void PlayCoinRedSound()
+    {
+        audioSource.PlayOneShot(coinRed);
+    }
+    public void PlayCoinYellowSound()
+    {
+        audioSource.PlayOneShot(coinYellow);
     }
 
     public void PlayDestroyDirtSound()

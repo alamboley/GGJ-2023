@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioManager: {fileID: 1518986886}
   audioSource: {fileID: 978260824}
-  totalCoin: 0
+  totalCoin: 1000
   abilities: 
 --- !u!4 &978260823
 Transform:
@@ -1885,6 +1885,9 @@ MonoBehaviour:
   dynamite: {fileID: 8300000, guid: 6057d627401e96d49977776536de64b2, type: 3}
   explosion: {fileID: 8300000, guid: bcf2e9e1e7c1f954a95e251695a55905, type: 3}
   crushed: {fileID: 8300000, guid: b30d3bf8f88b2c74384d6a07387d8c23, type: 3}
+  coinBlue: {fileID: 8300000, guid: 3ea7ff18556f01047a4429b4d6d83cd3, type: 3}
+  coinRed: {fileID: 8300000, guid: 4eb76c81f9d74f84dbf62d086d3de05f, type: 3}
+  coinYellow: {fileID: 8300000, guid: 191ce094fe860dd4b9eaa980b5327ecb, type: 3}
   destroyDirt: {fileID: 8300000, guid: 384e96164f26c9a47a5cf478694f24da, type: 3}
   destroyGravel: {fileID: 8300000, guid: 26940f6273adc01449ab37ffc676f56b, type: 3}
   destroyStone: {fileID: 8300000, guid: 142212f1e29eb274da2020c8fd822c22, type: 3}
