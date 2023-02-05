@@ -57,7 +57,9 @@ public class Character : MonoBehaviour
         {
             GameManager.Instance.RemoveItemInInventory(ItemType.Dynamite);
 
-            Instantiate(dynamitePrefab, transform.position, transform.rotation);
+            Dynamite dynamite = Instantiate<Dynamite>(dynamitePrefab, transform.position, transform.rotation);
+
+            GameManager.Instance.audioManager.PlayDynamiteSound(dynamite.TimeBeforeExplosion);
         }
 
         if (Input.GetKeyDown(KeyCode.E) && GameManager.Instance.abilities.Contains(ItemType.Wolverine) && !_WolverineModeOn)

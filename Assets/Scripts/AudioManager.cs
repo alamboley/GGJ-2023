@@ -1,20 +1,23 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource audioSource;
 
-    [SerializeField] AudioClip music;
-
     [SerializeField] AudioClip click;
-
-    public void LaunchMusic()
-    {
-        audioSource.PlayOneShot(music);
-    }
+    [SerializeField] AudioClip dynamite;
+    [SerializeField] AudioClip explosion;
 
     public void PlayClickSound()
     {
         audioSource.PlayOneShot(click);
+    }
+
+    public void PlayDynamiteSound(float delay)
+    {
+        audioSource.PlayOneShot(dynamite);
+
+        DOVirtual.DelayedCall(delay, () => audioSource.PlayOneShot(explosion));
     }
 }

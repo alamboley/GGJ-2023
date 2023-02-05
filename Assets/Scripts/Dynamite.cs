@@ -3,6 +3,10 @@ using UnityEngine;
 public class Dynamite : MonoBehaviour
 {
     [SerializeField] float timeBeforeExplosion = 2f;
+    public float TimeBeforeExplosion
+    {
+        get { return timeBeforeExplosion; }
+    }
 
     float _timeElapsed = 0;
 

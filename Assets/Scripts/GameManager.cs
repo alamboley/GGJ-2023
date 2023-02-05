@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : PersistentSingleton<GameManager>
 {
     public AudioManager audioManager;
+    [SerializeField] AudioSource audioSource;
 
     public int totalCoin = 0;
 
@@ -29,7 +30,7 @@ public class GameManager : PersistentSingleton<GameManager>
     public void LaunchGame()
     {
         audioManager.PlayClickSound();
-        audioManager.LaunchMusic();
+        audioSource.Play();
         GameManager.Instance.MoveToNextLevel();
     }
 
