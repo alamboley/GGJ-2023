@@ -136,6 +136,7 @@ MonoBehaviour:
   animator: {fileID: 7370168087236894924}
   damage: 2
   dynamitePrefab: {fileID: 678872532399972477, guid: 09e7a7beb90733949acb73a78de2759f, type: 3}
+  fogOfWar: {fileID: 5765777720756123775}
   canMove: 1
 --- !u!61 &3435317786177682898
 BoxCollider2D:

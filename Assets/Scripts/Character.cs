@@ -11,6 +11,8 @@ public class Character : MonoBehaviour
 
     [SerializeField] Dynamite dynamitePrefab;
 
+    public SpriteRenderer fogOfWar;
+
     float _timeSinceLastMovement = 0f;
     float _speedMove = 0.25f;
 

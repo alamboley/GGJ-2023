@@ -93,10 +93,12 @@ public class Dynamite : MonoBehaviour
             if (character != null)
             {
                 Debug.Log("DYNAMITE KILLS PLAYERS");
-                Destroy(hit.collider.gameObject);
+
+                character.fogOfWar.transform.parent = character.transform.parent; // reparrent so we keep the fog of war
+
+                Destroy(character.gameObject);
 
                 GameManager.Instance.GameOver();
-                FindObjectOfType<Character>().canMove = false;
             }
         }
     }
