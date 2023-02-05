@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Dynamite : MonoBehaviour
@@ -9,6 +10,18 @@ public class Dynamite : MonoBehaviour
     }
 
     float _timeElapsed = 0;
+
+    Tween _tween;
+
+    void Start()
+    {
+        _tween = GetComponent<SpriteRenderer>().DOFade(0.5f, 0.4f).SetLoops(-1, LoopType.Yoyo);
+    }
+
+    void OnDestroy()
+    {
+        _tween.Kill();
+    }
 
     private void Update()
     {
