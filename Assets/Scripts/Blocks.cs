@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Blocks : MonoBehaviour
 {
+    [SerializeField] BlockType blockType;
     [SerializeField] int coin = 50;
     public int Coin
     {
@@ -47,8 +48,25 @@ public class Blocks : MonoBehaviour
         if (hasDynamite)
             GameManager.Instance.AddItemInInventory(ItemType.Dynamite);
 
-        GameManager.Instance.audioManager.PlayDestroyDirtSound();
+        if (blockType == BlockType.Dirt)
+            GameManager.Instance.audioManager.PlayDestroyDirtSound();
+        else if (blockType == BlockType.Gravel)
+            GameManager.Instance.audioManager.PlayDestroyGravelSound();
+        else if (blockType == BlockType.Stone)
+            GameManager.Instance.audioManager.PlayDestroyStoneSound();
+
 
         Destroy(gameObject);
     }
+}
+public enum BlockType
+{
+    Background,
+    Dirt,
+    Gravel,
+    Stone,
+    Obsidian,
+    DirtWithResourceBlue,
+    DirtWithResourceRed,
+    DirtWithResourceYellow
 }

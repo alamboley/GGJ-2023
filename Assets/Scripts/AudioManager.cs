@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip explosion;
     [SerializeField] AudioClip crushed;
     [SerializeField] AudioClip destroyDirt;
+    [SerializeField] AudioClip destroyGravel;
+    [SerializeField] AudioClip destroyStone;
 
     public void PlayClickSound()
     {
@@ -31,5 +33,13 @@ public class AudioManager : MonoBehaviour
     public void PlayDestroyDirtSound()
     {
         audioSource.PlayOneShot(destroyDirt);
+    }
+    public void PlayDestroyGravelSound()
+    {
+        audioSource.PlayOneShot(destroyGravel);
+    }
+    public void PlayDestroyStoneSound()
+    {
+        audioSource.PlayOneShot(destroyStone);
     }
 }

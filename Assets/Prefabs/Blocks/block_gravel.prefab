@@ -125,8 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a17536b29dd84c41a1a7aa4444578ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 2
   coin: 0
   health: 200
+  hasDynamite: 0
 --- !u!114 &4769708330410274255
 MonoBehaviour:
   m_ObjectHideFlags: 0
