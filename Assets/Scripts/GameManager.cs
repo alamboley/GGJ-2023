@@ -18,7 +18,7 @@ public class GameManager : PersistentSingleton<GameManager>
 
     public void AddMoneyBlockDestroyed(int coin)
     {
-        totalCoin += (int)Math.Ceiling (coin + coin * ((float) abilities.FindAll(x => x == ItemType.Cresus).Count) / 100);
+        totalCoin += (int)Math.Ceiling (coin + coin * ((float) abilities.FindAll(x => x == ItemType.Cresus).Count) / 10);
 
         ItemInGame[] items = GetCanvasInGame().GetComponentsInChildren<ItemInGame>();
 
