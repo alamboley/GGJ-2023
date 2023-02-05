@@ -11,6 +11,8 @@ public class GameManager : PersistentSingleton<GameManager>
 
     public List<ItemType> abilities = new List<ItemType>();
 
+    int lastLevelReached = 1;
+
     CanvasInGame canvasInGame;
 
     public void AddMoneyBlockDestroyed(int coin)
@@ -31,12 +33,16 @@ public class GameManager : PersistentSingleton<GameManager>
     {
         audioManager.PlayClickSound();
         audioSource.Play();
-        GameManager.Instance.MoveToNextLevel();
+
+        SceneManager.LoadScene(lastLevelReached);
+        canvasInGame = FindObjectOfType<CanvasInGame>();
     }
 
     public void MoveToNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        lastLevelReached = SceneManager.GetActiveScene().buildIndex + 1;
+
+        SceneManager.LoadScene(lastLevelReached);
 
         canvasInGame = FindObjectOfType<CanvasInGame>();
     }
