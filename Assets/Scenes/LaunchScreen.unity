@@ -473,9 +473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2004212290422304576, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_text
-      value: 'CLAWS
-
-        100'
+      value: CLAWS
       objectReference: {fileID: 0}
     - target: {fileID: 3962326170293952226, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_Name
@@ -483,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: itemType
@@ -702,9 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2004212290422304576, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_text
-      value: 'CRESUS
-
-        100'
+      value: CRESUS
       objectReference: {fileID: 0}
     - target: {fileID: 2667687145922069378, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -716,7 +712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: itemType
@@ -966,9 +962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2004212290422304576, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_text
-      value: 'WOLVERINE
-
-        100'
+      value: WOLVERINE
       objectReference: {fileID: 0}
     - target: {fileID: 2667687145922069378, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -984,7 +978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: itemType
@@ -1337,9 +1331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2004212290422304576, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_text
-      value: 'VISION
-
-        100'
+      value: VISION
       objectReference: {fileID: 0}
     - target: {fileID: 2667687145922069378, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1351,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
-      value: 100
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: itemType
@@ -1881,7 +1873,7 @@ MonoBehaviour:
   click: {fileID: 8300000, guid: 384e96164f26c9a47a5cf478694f24da, type: 3}
   dynamite: {fileID: 8300000, guid: 6057d627401e96d49977776536de64b2, type: 3}
   explosion: {fileID: 8300000, guid: bcf2e9e1e7c1f954a95e251695a55905, type: 3}
-  crushed: {fileID: 8300000, guid: 8fac80f9b4f8f3248b712adc6bcf6cfe, type: 3}
+  crushed: {fileID: 8300000, guid: b30d3bf8f88b2c74384d6a07387d8c23, type: 3}
   destroyDirt: {fileID: 8300000, guid: 384e96164f26c9a47a5cf478694f24da, type: 3}
   destroyGravel: {fileID: 8300000, guid: 26940f6273adc01449ab37ffc676f56b, type: 3}
   destroyStone: {fileID: 8300000, guid: 142212f1e29eb274da2020c8fd822c22, type: 3}
@@ -2111,7 +2103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: cost
-      value: 500
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7183853503698824335, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: canvasLaunchScreen
