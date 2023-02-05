@@ -47162,7 +47162,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 750078409716590827, guid: 68fe9156962459447ac42ff65e049e4a, type: 3}
       propertyPath: damage
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1038845992667933982, guid: 68fe9156962459447ac42ff65e049e4a, type: 3}
       propertyPath: m_RootOrder
@@ -47211,6 +47211,10 @@ PrefabInstance:
     - target: {fileID: 1038845992667934048, guid: 68fe9156962459447ac42ff65e049e4a, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765777720756123775, guid: 68fe9156962459447ac42ff65e049e4a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68fe9156962459447ac42ff65e049e4a, type: 3}
