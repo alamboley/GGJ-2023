@@ -37,19 +37,19 @@ public class Character : MonoBehaviour
 
         _timeSinceLastMovement += Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if ((Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey(KeyCode.D)))
         {
             MoveToDirection(0.4f, 0);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if ((Input.GetKey(KeyCode.LeftArrow)) || (Input.GetKey(KeyCode.Q)))
         {
             MoveToDirection(-0.4f, 0);
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.Z)))
         {
             MoveToDirection(0, 0.4f);
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if ((Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S)))
         {
             MoveToDirection(0, -0.4f);
         }
