@@ -9,13 +9,19 @@ public class Block : MonoBehaviour
         get { return coin; }
     }
 
-    [SerializeField] public float health = 100f;
+    [SerializeField] float health = 100f;
 
     [SerializeField] bool hasDynamite = false;
+
+    [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] Sprite spriteBroken;
 
     public void AddDamage(float damage)
     {
         health -= damage;
+
+        if (blockType == BlockType.Stone && health < 400f)
+            spriteRenderer.sprite = spriteBroken;
 
         if (health < 0)
             DestroyBlock();

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 484542853203231444}
   - component: {fileID: 4576420147406549884}
   - component: {fileID: 5853664588361323762}
-  - component: {fileID: 9013993643786310263}
   m_Layer: 0
   m_Name: block_Stone
   m_TagString: Untagged
@@ -130,6 +129,8 @@ MonoBehaviour:
   coin: 0
   health: 800
   hasDynamite: 0
+  spriteRenderer: {fileID: 8401069363645197099}
+  spriteBroken: {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
 --- !u!114 &5853664588361323762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,18 +145,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timingBeforeFirstFall: 1
   gravitySpeed: 0.6
---- !u!114 &9013993643786310263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8401069363645197096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa88faa441fbb124c8dfb3f154f37ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Sprite: {fileID: 8401069363645197099}
-  SpriteBroken: {fileID: 21300000, guid: 34068bc718cdd324991d558dd9be22b5, type: 3}
-  block: {fileID: 4576420147406549884}
