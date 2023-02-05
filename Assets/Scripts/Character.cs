@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
 
     void Start()
     {
-        damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Claws).Count / 100;
+        damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Claws).Count / 10;
 
         if (GameManager.Instance.abilities.Contains(ItemType.Fog))
             fogOfWar.transform.localScale = Vector3.one;
@@ -37,19 +37,19 @@ public class Character : MonoBehaviour
 
         _timeSinceLastMovement += Time.deltaTime;
 
-        if ((Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey(KeyCode.D)))
+        if (Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
         {
             MoveToDirection(0.4f, 0);
         }
-        else if ((Input.GetKey(KeyCode.LeftArrow)) || (Input.GetKey(KeyCode.Q)))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.A))
         {
             MoveToDirection(-0.4f, 0);
         }
-        else if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.Z)))
+        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.W))
         {
             MoveToDirection(0, 0.4f);
         }
-        else if ((Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S)))
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             MoveToDirection(0, -0.4f);
         }
@@ -58,7 +58,7 @@ public class Character : MonoBehaviour
             animator.SetBool("isDigging", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.A) && GameManager.Instance.abilities.Contains(ItemType.Dynamite))
+        if (Input.GetKeyDown(KeyCode.E) && GameManager.Instance.abilities.Contains(ItemType.Dynamite))
         {
             GameManager.Instance.RemoveItemInInventory(ItemType.Dynamite);
 
@@ -67,7 +67,7 @@ public class Character : MonoBehaviour
             GameManager.Instance.audioManager.PlayDynamiteSound(dynamite.TimeBeforeExplosion);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && GameManager.Instance.abilities.Contains(ItemType.Wolverine) && !_WolverineModeOn)
+        if (Input.GetKeyDown(KeyCode.R) && GameManager.Instance.abilities.Contains(ItemType.Wolverine) && !_WolverineModeOn)
         {
             GameManager.Instance.RemoveItemInInventory(ItemType.Wolverine);
 
