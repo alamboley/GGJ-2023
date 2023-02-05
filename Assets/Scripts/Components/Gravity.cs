@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -20,6 +21,8 @@ public class Gravity : MonoBehaviour
         StartCoroutine(_BottomBlockDestroying());
         IEnumerator _BottomBlockDestroying()
         {
+            GetComponent<SpriteRenderer>().DOFade(0.6f, 0.2f).SetLoops(4, LoopType.Yoyo);
+
             yield return new WaitForSeconds(timingBeforeFirstFall);
 
             ChainGravityWithUp();
