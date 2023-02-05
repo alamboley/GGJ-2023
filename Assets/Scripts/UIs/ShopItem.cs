@@ -10,12 +10,15 @@ public class ShopItem : MonoBehaviour
     [SerializeField] CanvasLaunchScreen canvasLaunchScreen;
 
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] TextMeshProUGUI numItems;
 
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(Clicked);
 
         text.text += "\n" + cost.ToString();
+
+        UpdateNumItems();
     }
 
     void Clicked()
@@ -28,8 +31,16 @@ public class ShopItem : MonoBehaviour
 
             GameManager.Instance.abilities.Add(itemType);
 
+            UpdateNumItems();
+
             canvasLaunchScreen.UpdateCoins();
         }
+    }
+
+    void UpdateNumItems()
+    {
+        numItems.text = "x" + GameManager.Instance.abilities.FindAll(x => x == itemType).Count;
+
     }
 }
 

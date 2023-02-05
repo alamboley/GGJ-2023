@@ -280,7 +280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.139099, y: -206.51859}
+  m_AnchoredPosition: {x: 9.139099, y: -187.91}
   m_SizeDelta: {x: 702.2782, y: 89.0372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127982088
@@ -303,8 +303,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You are a forest spirit trying to clear a path for the root of his tree.
+  m_text: 'You are a forest spirit trying to clear a path for the root of his tree.
     It shall not hit a wall.
+
+    Move with arrows keyboard or PGM keys ;)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c1ba7ce4de883c4fabb34779e26449b, type: 2}
   m_sharedMaterial: {fileID: -4010846424498517446, guid: 4c1ba7ce4de883c4fabb34779e26449b, type: 2}
@@ -475,6 +477,10 @@ PrefabInstance:
     - target: {fileID: 2004212290422304576, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_text
       value: CLAWS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2979665011829372047, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 75.2
       objectReference: {fileID: 0}
     - target: {fileID: 3962326170293952226, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_Name
@@ -2089,10 +2095,6 @@ PrefabInstance:
     - target: {fileID: 42305684033515480, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2004212290422304576, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
-      propertyPath: m_text
-      value: DYNAMITE
       objectReference: {fileID: 0}
     - target: {fileID: 2667687145922069378, guid: 3a020eeb89053ca4f8c1de5d81f923af, type: 3}
       propertyPath: m_AnchoredPosition.x
