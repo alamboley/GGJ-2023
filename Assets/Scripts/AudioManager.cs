@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip dynamite;
     [SerializeField] AudioClip explosion;
     [SerializeField] AudioClip crushed;
+    [SerializeField] AudioClip destroyDirt;
 
     public void PlayClickSound()
     {
@@ -25,5 +26,10 @@ public class AudioManager : MonoBehaviour
     public void PlayCrushedSound()
     {
         audioSource.PlayOneShot(crushed);
+    }
+
+    public void PlayDestroyDirtSound()
+    {
+        audioSource.PlayOneShot(destroyDirt);
     }
 }

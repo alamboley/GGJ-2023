@@ -1519,6 +1519,7 @@ MonoBehaviour:
   dynamite: {fileID: 8300000, guid: 6057d627401e96d49977776536de64b2, type: 3}
   explosion: {fileID: 8300000, guid: bcf2e9e1e7c1f954a95e251695a55905, type: 3}
   crushed: {fileID: 8300000, guid: 8fac80f9b4f8f3248b712adc6bcf6cfe, type: 3}
+  destroyDirt: {fileID: 8300000, guid: 384e96164f26c9a47a5cf478694f24da, type: 3}
 --- !u!1 &1522378296
 GameObject:
   m_ObjectHideFlags: 0

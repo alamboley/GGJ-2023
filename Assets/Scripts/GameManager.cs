@@ -45,8 +45,18 @@ public class GameManager : PersistentSingleton<GameManager>
         SceneManager.LoadScene(0);
     }
 
-    public void GameOver()
+    public void GameOver(Character character, bool kill)
     {
+        if (kill)
+        {
+            character.fogOfWar.transform.parent = character.transform.parent; // reparrent so we keep the fog of war
+
+            Destroy(character.gameObject);
+        }
+        else
+            character.canMove = false;
+
+
         if (canvasInGame == null)
             canvasInGame = FindObjectOfType<CanvasInGame>();
 

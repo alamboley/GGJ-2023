@@ -47,6 +47,8 @@ public class Blocks : MonoBehaviour
         if (hasDynamite)
             GameManager.Instance.AddItemInInventory(ItemType.Dynamite);
 
+        GameManager.Instance.audioManager.PlayDestroyDirtSound();
+
         Destroy(gameObject);
     }
 }

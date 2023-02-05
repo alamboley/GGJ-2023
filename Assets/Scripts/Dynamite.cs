@@ -94,11 +94,7 @@ public class Dynamite : MonoBehaviour
             {
                 Debug.Log("DYNAMITE KILLS PLAYERS");
 
-                character.fogOfWar.transform.parent = character.transform.parent; // reparrent so we keep the fog of war
-
-                Destroy(character.gameObject);
-
-                GameManager.Instance.GameOver();
+                GameManager.Instance.GameOver(character, true);
             }
         }
     }

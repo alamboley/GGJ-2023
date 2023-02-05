@@ -68,8 +68,7 @@ public class RootsAnimation : MonoBehaviour
                         if (block != null)
                         {
                             Debug.Log("GAME OVER roots hit block");
-                            GameManager.Instance.GameOver();
-                            FindObjectOfType<Character>().canMove = false;
+                            GameManager.Instance.GameOver(FindObjectOfType<Character>(), false);
                         }
                     }
                 });

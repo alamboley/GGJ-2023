@@ -41,8 +41,7 @@ public class Gravity : MonoBehaviour
 
                     GameManager.Instance.audioManager.PlayCrushedSound();
 
-                    GameManager.Instance.GameOver();
-                    FindObjectOfType<Character>().canMove = false;
+                    GameManager.Instance.GameOver(character, true);
                 }
             }
 
@@ -81,8 +80,7 @@ public class Gravity : MonoBehaviour
 
                 GameManager.Instance.audioManager.PlayCrushedSound();
 
-                GameManager.Instance.GameOver();
-                FindObjectOfType<Character>().canMove = false;
+                GameManager.Instance.GameOver(character, true);
 
                 transform.Translate(0, -0.4f, 0);
 
