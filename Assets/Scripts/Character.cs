@@ -166,4 +166,10 @@ public class Character : MonoBehaviour
 
         }
     }
+
+    public void StopCharacter()
+    {
+        canMove = false;
+        animator.SetBool("isDigging", false);
+    }
 }

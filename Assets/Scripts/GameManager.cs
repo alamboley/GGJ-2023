@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -28,6 +29,13 @@ public class GameManager : PersistentSingleton<GameManager>
     public void RemoveItemInInventory(ItemType ability)
     {
         abilities.Remove(ability);
+        canvasInGame = FindObjectOfType<CanvasInGame>();
+
+        Debug.Log(canvasInGame);
+
+        ItemInGame[] items = canvasInGame.GetComponentsInChildren<ItemInGame>();
+
+        Array.Find(items, item => item.itemType == ability).UpdateNumItems();
     }
     public void LaunchGame()
     {
@@ -60,7 +68,7 @@ public class GameManager : PersistentSingleton<GameManager>
             Destroy(character.gameObject);
         }
         else
-            character.canMove = false;
+            character.StopCharacter();
 
 
         if (canvasInGame == null)
