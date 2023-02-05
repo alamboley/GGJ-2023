@@ -22,12 +22,6 @@ public class ShopItem : MonoBehaviour
     {
         GameManager.Instance.audioManager.PlayClickSound();
 
-        if (itemType == ItemType.Fog && GameManager.Instance.abilities.Contains(ItemType.Fog))
-        {
-            Debug.Log("just one fog");
-            return;
-        }
-
         if (cost <= GameManager.Instance.totalCoin)
         {
             GameManager.Instance.totalCoin -= cost;
