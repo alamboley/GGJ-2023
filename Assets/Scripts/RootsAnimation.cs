@@ -58,7 +58,7 @@ public class RootsAnimation : MonoBehaviour
                     Debug.DrawRay(raycastCenter, direction, Color.cyan);
 
                     RaycastHit2D hit = Physics2D.Raycast(raycastCenter, direction, 0.4f / 5);
-                    if (hit.collider == null)
+                    if (hit.collider == null || hit.collider.GetComponent<Character>() != null)
                     {
                         AnimateRoots(position + 1);
                     }
@@ -70,10 +70,6 @@ public class RootsAnimation : MonoBehaviour
                             Debug.Log("GAME OVER roots hit block");
                             GameManager.Instance.GameOver(FindObjectOfType<Character>(), false);
 
-                        }
-                        else
-                        {
-                            AnimateRoots(position + 1);
                         }
                     }
                 });
