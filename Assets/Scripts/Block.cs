@@ -3,6 +3,10 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] BlockType blockType;
+    public BlockType BlockType
+    {
+        get { return blockType; }
+    }
     [SerializeField] int coin = 50;
     public int Coin
     {

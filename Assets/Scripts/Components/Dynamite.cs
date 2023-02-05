@@ -99,7 +99,7 @@ public class Dynamite : MonoBehaviour
         if (hit.collider != null)
         {
             Block block = hit.collider.GetComponent<Block>();
-            if (block != null)
+            if (block != null && block.BlockType != BlockType.Obsidian)
                 block.DestroyBlock();
 
             Character character = hit.collider.GetComponent<Character>();

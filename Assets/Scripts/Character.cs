@@ -151,7 +151,8 @@ public class Character : MonoBehaviour
             }
             else
             {
-                _hitBlock.AddDamage(damage * (_WolverineModeOn ? 4 : 1));
+                if (_hitBlock.BlockType != BlockType.Obsidian)
+                    _hitBlock.AddDamage(damage * (_WolverineModeOn ? 4 : 1));
             }
 
             _timeSinceLastMovement = 0f; // reset to add a delay so the gravity block is well raycasted
@@ -166,7 +167,6 @@ public class Character : MonoBehaviour
 
         }
     }
-
     public void StopCharacter()
     {
         canMove = false;
