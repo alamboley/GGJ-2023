@@ -31,6 +31,7 @@ public class Character : MonoBehaviour
         localScale.x += numFogs * 0.15f;
         localScale.y += numFogs * 0.15f;
         localScale.z += numFogs * 0.15f;
+        fogOfWar.transform.localScale = localScale;
     }
 
     void Update()
