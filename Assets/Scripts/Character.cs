@@ -25,6 +25,9 @@ public class Character : MonoBehaviour
     void Start()
     {
         damage += damage * GameManager.Instance.abilities.FindAll(x => x == ItemType.Claws).Count / 100;
+
+        if (GameManager.Instance.abilities.Contains(ItemType.Fog))
+            fogOfWar.transform.localScale = Vector3.one;
     }
 
     void Update()
