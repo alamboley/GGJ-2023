@@ -50,5 +50,6 @@ public enum ItemType
     Claws,
     Cresus,
     Wolverine,
-    Fog
+    Fog,
+    Coin
 }

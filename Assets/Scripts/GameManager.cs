@@ -19,21 +19,26 @@ public class GameManager : PersistentSingleton<GameManager>
     public void AddMoneyBlockDestroyed(int coin)
     {
         totalCoin += coin + coin * abilities.FindAll(x => x == ItemType.Cresus).Count / 100;
+
+        ItemInGame[] items = GetCanvasInGame().GetComponentsInChildren<ItemInGame>();
+
+        Array.Find(items, item => item.itemType == ItemType.Coin).UpdateNumItems();
     }
 
     public void AddItemInInventory(ItemType ability)
     {
         abilities.Add(ability);
+
+        ItemInGame[] items = GetCanvasInGame().GetComponentsInChildren<ItemInGame>();
+
+        Array.Find(items, item => item.itemType == ability).UpdateNumItems();
     }
 
     public void RemoveItemInInventory(ItemType ability)
     {
         abilities.Remove(ability);
-        canvasInGame = FindObjectOfType<CanvasInGame>();
 
-        Debug.Log(canvasInGame);
-
-        ItemInGame[] items = canvasInGame.GetComponentsInChildren<ItemInGame>();
+        ItemInGame[] items = GetCanvasInGame().GetComponentsInChildren<ItemInGame>();
 
         Array.Find(items, item => item.itemType == ability).UpdateNumItems();
     }
@@ -43,7 +48,6 @@ public class GameManager : PersistentSingleton<GameManager>
         audioSource.Play();
 
         SceneManager.LoadScene(lastLevelReached);
-        canvasInGame = FindObjectOfType<CanvasInGame>();
     }
 
     public void MoveToNextLevel()
@@ -51,8 +55,6 @@ public class GameManager : PersistentSingleton<GameManager>
         lastLevelReached = SceneManager.GetActiveScene().buildIndex + 1;
 
         SceneManager.LoadScene(lastLevelReached);
-
-        canvasInGame = FindObjectOfType<CanvasInGame>();
     }
     public void BackToHomeScreen()
     {
@@ -70,11 +72,14 @@ public class GameManager : PersistentSingleton<GameManager>
         else
             character.StopCharacter();
 
+        GetCanvasInGame().ShowGameOver();
+    }
 
+    CanvasInGame GetCanvasInGame()
+    {
         if (canvasInGame == null)
             canvasInGame = FindObjectOfType<CanvasInGame>();
 
-        Debug.Log(canvasInGame);
-        canvasInGame.ShowGameOver();
+        return canvasInGame;
     }
 }
