@@ -12,6 +12,7 @@ public class Block : MonoBehaviour
     [SerializeField] float health = 100f;
 
     [SerializeField] bool hasDynamite = false;
+    [SerializeField] bool hasWolverine = false;
 
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Sprite spriteBroken;
@@ -53,6 +54,9 @@ public class Block : MonoBehaviour
 
         if (hasDynamite)
             GameManager.Instance.AddItemInInventory(ItemType.Dynamite);
+
+        if (hasWolverine)
+            GameManager.Instance.AddItemInInventory(ItemType.Wolverine);
 
         if (blockType == BlockType.Dirt)
             GameManager.Instance.audioManager.PlayDestroyDirtSound();
