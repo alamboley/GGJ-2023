@@ -215,6 +215,7 @@ MonoBehaviour:
   itemType: 0
   cost: 100
   canvasLaunchScreen: {fileID: 0}
+  text: {fileID: 2004212290422304576}
 --- !u!1 &9143236912381706571
 GameObject:
   m_ObjectHideFlags: 0

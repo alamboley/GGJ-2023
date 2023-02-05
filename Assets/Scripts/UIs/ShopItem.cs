@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShopItem : MonoBehaviour
 {
@@ -8,10 +9,13 @@ public class ShopItem : MonoBehaviour
 
     [SerializeField] CanvasLaunchScreen canvasLaunchScreen;
 
+    [SerializeField] TextMeshProUGUI text;
 
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(Clicked);
+
+        text.text += "\n" + cost.ToString();
     }
 
     void Clicked()
